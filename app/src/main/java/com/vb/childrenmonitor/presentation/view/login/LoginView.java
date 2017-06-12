@@ -1,4 +1,4 @@
-package com.vb.childrenmonitor.presentation.view;
+package com.vb.childrenmonitor.presentation.view.login;
 
 import com.arellomobile.mvp.MvpView;
 
@@ -8,4 +8,6 @@ import com.arellomobile.mvp.MvpView;
 
 public interface LoginView extends MvpView {
     void showMessage(String message);
+    void showBadData();
+    void startMainActivity();
 }
