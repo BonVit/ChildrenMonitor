@@ -14,7 +14,7 @@ import com.vb.childrenmonitor.dagger.module.FirebaseModule;
 public class App extends Application {
     private static final String TAG = "App";
 
-    AppComponent mAppComponent;
+    private static AppComponent mAppComponent;
 
     @Override
     public void onCreate() {
@@ -24,7 +24,7 @@ public class App extends Application {
         mAppComponent = buildComponent();
     }
 
-    public AppComponent getAppComponent() {
+    public static AppComponent getAppComponent() {
         return mAppComponent;
     }
 
